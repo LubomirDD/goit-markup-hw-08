@@ -1,0 +1,96 @@
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.benefits-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.benefits-list__item {
+  margin-bottom: 30px;
+  & + & {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-bottom: unset;
+    & + & {
+      margin-left: 30px;
+      margin-bottom: unset;
+    }
+  }
+}
+
+.benefits-list__icon-background {
+  width: 450px;
+  height: 120px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
+  left: 215px;
+  top: 774px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  @include align-list;
+  justify-content: center;
+}
+
+.benefits-list__item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--project-black);
+  margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--project-black);
+    margin-bottom: 10px;
+  }
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: calc(16 / 14);
+  // letter-spacing: 0.03em;
+  // text-transform: uppercase;
+  // color: var(--project-black);
+  // margin-bottom: 10px;
+}
+
+.benefits-list__item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--header-grey);
+}

@@ -1,0 +1,218 @@
+.footer {
+  background-color: #2f303a;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+  // display: flex;
+  // align-items: baseline;
+}
+
+// .footer__logo {
+//   margin-left: 163px;
+// }
+
+.footer__tab__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__part-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.footer__logo-part-3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-list__adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
+}
+
+.footer-list__mail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list__tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__part-2 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: unset;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-socials__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.footer-socials__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @include align-list;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-socials__icon {
+  fill: white;
+}
+
+.footer__email-section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.footer__form-btn-section {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__input {
+  width: 450px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  @include align-list;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  padding-left: 16px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.footer__button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+
+.footer__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  padding: 10px 0 10px 32px 0 32px;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.footer__subscribe-icon {
+  margin-left: 10px;
+}

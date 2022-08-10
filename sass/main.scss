@@ -1,0 +1,25 @@
+@import "./base/common";
+@import "./base/resets";
+@import "./components/container";
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/mixins";
+
+//STUDIO//
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/benefits";
+@import "./layout/what-we-do";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+@import "./components/modal";
+
+//PORTFOLIO//
+
+@import "./layout/header";
+@import "./layout/filters";
+@import "./layout/products";
+@import "./layout/footer";
