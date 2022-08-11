@@ -225,13 +225,43 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img 
-                        srcset="./images/product-designer.jpg 1x, ./images/product-designer-2x.jpeg 2x"
+                        <picture>
+                            <source 
+                                srcset="
+                                ./images/product-designer.jpg 1x, 
+                                ./images/product-designer-2x.jpeg 2x
+                                " 
+                                media="(min-width: 1200px)"
+                            >
+                            <source 
+                                srcset="
+                                ./images/product-designer-tab.jpeg 1x, 
+                                ./images/product-designer-tab-2x.jpeg 2x
+                                " 
+                                media="(min-width: 768px)"
+                            >
+                            <source 
+                                srcset="
+                                ./images/product-designer-mob.jpeg 1x, 
+                                ./images/product-designer-mob-2x.jpeg 2x
+                                " 
+                                media="(min-width: 320px)"
+                            >
+                            <img 
+                            src="./images/product-designer.jpg" 
+                            alt="Продакт дизайнер" 
+                            class="team-list__img"
+                            >
+                        </picture>
+                        <!-- <img 
+                        srcset="./images/product-designer.jpg 1x, 
+                        ./images/product-designer-2x.jpeg 2x"
                         src="./images/product-designer.jpg" 
                         alt="Продакт дизайнер" 
                         width="270" 
                         height="260"
-                        class="team-list__img">
+                        class="team-list__img"
+                        > -->
                         <div class="team-list__text-container">
                             <p class="team-list__text">Игорь Демьяненко</p>
                             <p lang="en" class="team-list__position-text">Product Designer</p>
